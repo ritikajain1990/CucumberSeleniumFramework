@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 19 11:13:17 IST 2024</td>
+<td>Started on:</td><td>Tue Mar 19 14:06:34 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20379 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15489 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,67 +77,31 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for profuct on home and offers page", "Search the place the order for the products"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;search-field&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [6f1079a0-f40b-421e-a6c7-8c2dd9521a1f, findElement {using=xpath, value=//input[@id=&apos;search-field&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:24097, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31728, moz:profile: C:\Users\ritik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:24097/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6f1079a0-f40b-421e-a6c7-8c2dd9521a1f
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at pageObjects.OffersPage.searchProduct(OffersPage.java:21)
-	at stepDefinitions.OffersPageStepDefinitions.user_search_the_same_product_on_offers_page_and_check_product_exist(OffersPageStepDefinitions.java:36)
-	at ✽.user search the same product Tom on offers page and check product exist(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/searchProduct.feature:7)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1511282158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1511282158'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;search-field&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [6f1079a0-f40b-421e-a6c7-8c2dd9521a1f, findElement {using=xpath, value=//input[@id=&apos;search-field&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:24097, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31728, moz:profile: C:\Users\ritik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:24097/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6f1079a0-f40b-421e-a6c7-8c2dd9521a1f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at pageObjects.OffersPage.searchProduct(OffersPage.java:21)
-	at stepDefinitions.OffersPageStepDefinitions.user_search_the_same_product_on_offers_page_and_check_product_exist(OffersPageStepDefinitions.java:36)
-	at ✽.user search the same product Tom on offers page and check product exist(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/searchProduct.feature:7)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [No data] but found [Beetroot]
+	at stepDefinitions.OffersPageStepDefinitions.user_search_the_same_product_on_offers_page_and_check_product_exist(OffersPageStepDefinitions.java:41)
+	at ?.user search the same product Beet on offers page and check product exist(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/searchProduct.feature:7)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace531703448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace531703448'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [No data] but found [Beetroot]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepDefinitions.OffersPageStepDefinitions.user_search_the_same_product_on_offers_page_and_check_product_exist(OffersPageStepDefinitions.java:41)
+	at ?.user search the same product Beet on offers page and check product exist(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/searchProduct.feature:7)
 </pre></div></td>
-<td>14</td>
-<td>cucumberOptions.TestNGRunner@3e92efc3</td></tr>
+<td>10</td>
+<td>cucumberOptions.TestNGRunner@2b91004a</td></tr>
 <tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for profuct on home and offers page", "Search the place the order for the products"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;search-field&apos;]
+<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User and add and place the order", "Add a product and place the order"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select&quot;}
+  (Session info: chrome=121.0.6167.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [06a0ced2-fe20-4335-a1e7-1552fa335779, findElement {using=xpath, value=//input[@id=&apos;search-field&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:33108, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25876, moz:profile: C:\Users\ritik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:33108/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 06a0ced2-fe20-4335-a1e7-1552fa335779
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53dd2b430b2eeb89daf2dba4e7a79fd6, findElement {value=//select, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\ritik\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57263/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53dd2b430b2eeb89daf2dba4e7a79fd6
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -149,21 +113,24 @@ Session ID: 06a0ced2-fe20-4335-a1e7-1552fa335779
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at pageObjects.OffersPage.searchProduct(OffersPage.java:21)
-	at stepDefinitions.OffersPageStepDefinitions.user_search_the_same_product_on_offers_page_and_check_product_exist(OffersPageStepDefinitions.java:36)
-	at ✽.user search the same product Beet on offers page and check product exist(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/searchProduct.feature:7)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace766730088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace766730088'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;search-field&apos;]
+	at pageObjects.CheckoutPage.selectDropdown(CheckoutPage.java:48)
+	at stepDefinitions.CheckoutPageStepDefinitions.user_selects_india_and_agree_terms(CheckoutPageStepDefinitions.java:39)
+	at ?.user selects India and agree terms(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/checkoutProduct.feature:13)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1619108444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1619108444'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select&quot;}
+  (Session info: chrome=121.0.6167.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [06a0ced2-fe20-4335-a1e7-1552fa335779, findElement {using=xpath, value=//input[@id=&apos;search-field&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:33108, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25876, moz:profile: C:\Users\ritik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:33108/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 06a0ced2-fe20-4335-a1e7-1552fa335779
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53dd2b430b2eeb89daf2dba4e7a79fd6, findElement {value=//select, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\ritik\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57263/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53dd2b430b2eeb89daf2dba4e7a79fd6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -175,12 +142,12 @@ Session ID: 06a0ced2-fe20-4335-a1e7-1552fa335779
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at pageObjects.OffersPage.searchProduct(OffersPage.java:21)
-	at stepDefinitions.OffersPageStepDefinitions.user_search_the_same_product_on_offers_page_and_check_product_exist(OffersPageStepDefinitions.java:36)
-	at ✽.user search the same product Beet on offers page and check product exist(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/searchProduct.feature:7)
+	at pageObjects.CheckoutPage.selectDropdown(CheckoutPage.java:48)
+	at stepDefinitions.CheckoutPageStepDefinitions.user_selects_india_and_agree_terms(CheckoutPageStepDefinitions.java:39)
+	at ?.user selects India and agree terms(file:///C:/Users/ritik/SeleniumFramework/GreekKart/src/test/java/features/checkoutProduct.feature:13)
 </pre></div></td>
 <td>14</td>
-<td>cucumberOptions.TestNGRunner@3e92efc3</td></tr>
+<td>cucumberOptions.TestNGRunner@2b91004a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -191,10 +158,10 @@ Session ID: 06a0ced2-fe20-4335-a1e7-1552fa335779
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User and add and place the order", "Add a product and place the order"</td>
+<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search experience for profuct on home and offers page", "Search the place the order for the products"</td>
 <td></td>
-<td>19</td>
-<td>cucumberOptions.TestNGRunner@3e92efc3</td></tr>
+<td>11</td>
+<td>cucumberOptions.TestNGRunner@2b91004a</td></tr>
 </table><p>
 </body>
 </html>
